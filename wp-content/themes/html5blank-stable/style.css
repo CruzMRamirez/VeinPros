@@ -92,8 +92,8 @@ input:focus {
 
 }
 /* nav */
-.nav {
-
+nav {
+	background-color: gray;
 }
 /* sidebar */
 .sidebar {
