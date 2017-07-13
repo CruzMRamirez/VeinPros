@@ -30,23 +30,18 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-				<div class="pagewrapper"> 
-					<nav class="navbar">
-						<div class="row">
-							<div class="col-3">
-								<h1 style="margin:0; padding:0;">Logo</h1>
-							</div>
-							<div class="col-8 text-right fake_links align-self-end" style="margin-right:100px;">
-								<p>Link | Link | Link | Link | Link | Link</p>
-							</div>
-							<div>
-
-							</div>
+				<nav class="navbar">
+					<div class="row">
+						<div class="col">
+							<h1 style="margin:0; padding:0;">Logo</h1>
 						</div>
-					</nav>
-					<div class="jumbotron">
-						<h1>Welcome to VeinPros</h1>
+						<div class="col-8 text-right fake_links align-self-end" style="margin-right:100px;">
+							<p>Link | Link | Link | Link | Link | Link</p>
+						</div>
+						<div>
+
+						</div>
 					</div>
-				</div>
+				</nav>
 			</header>
 			<!-- /header -->

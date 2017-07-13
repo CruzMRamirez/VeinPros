@@ -1,0 +1,46 @@
+.front-page {
+
+}
+.front-page .jumbotron {
+    margin: 0;
+    padding: 0;
+    min-height: 400px;
+    background-image: url(http://twitterdoctors.net/wp-content/uploads/2014/08/doctors1.jpg);
+    background-size: cover;
+}
+.front-page .jumbotron .black_highlight {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+}
+.front-page .jumbotron .black_highlight h1 {
+    font-size: 36px;
+}
+.front-page .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.front-page .content p {
+    font-size: 18px;
+}
+.front-page .videoRow {
+    padding: 20px;
+}
+.front-page #bigVideo, .front-page .smallVideo {
+    border: gainsboro 2px solid;
+}
+.front-page #bigVideo {
+    width: 60vw;
+    height: 30vw;
+}
+.front-page .smallVideo {
+    width: 30vw;
+    height: 15vw;
+}
+.front-page .row {
+    margin: 0;
+}
+.colorize {
+    background-color: gray;
+    padding: 0;
+}
