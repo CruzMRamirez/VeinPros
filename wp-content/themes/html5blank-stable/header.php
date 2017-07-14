@@ -30,9 +30,21 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-				<nav class="navbar">
-					<img src="" alt="">
-					<p class="text-right">Link | Link | Link | Link | Link | Link</p>
+				<nav class="row justify-content-end">
+					<div class="col">
+						<a href="#"><img src="wp-content/uploads/2017/07/editedLogo.png" height="110" width="170" alt="Logo"></a>
+					</div>
+					<div class="hidden-sm-down col-7 row justify-content-end align-self-end">
+						<button class="active">Home</button>
+						<button>Symptoms-Veins</button>
+						<button>Treatment</button>
+						<button>Testimonials</button>
+						<button>My Blog</button>
+						<button>Contact-Us</button>
+					</div>
+					<div class="hidden-md-up col row justify-content-end align-self-end">
+						<button ><img src="http://www.iconninja.com/files/327/943/625/more-home-menu-hamburger-icon.png" height="80" width="80"alt=""></button>	
+					</div> 
 				</nav>
 			</header>
 			<!-- /header -->

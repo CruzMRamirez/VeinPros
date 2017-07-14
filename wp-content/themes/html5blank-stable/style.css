@@ -84,6 +84,9 @@ input:focus {
 .header {
 
 }
+.header .col-6.row.justify-content-end.align-self-end {
+	padding: 0
+}
 /* logo */
 .logo {
 
@@ -93,7 +96,22 @@ input:focus {
 }
 /* nav */
 nav {
-	background-color: gray;
+	
+}
+nav button{
+	background-color: #688198;
+	font-size: 1.3vw;
+	color: #fff;
+	border: 2px solid white;
+}
+nav button:hover{
+	background-color: #E96969;
+}
+nav button.active{
+	background-color: #E34444;
+}
+nav a{
+	margin-left: 20px;
 }
 /* sidebar */
 .sidebar {
