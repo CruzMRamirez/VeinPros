@@ -31,17 +31,8 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 				<nav class="navbar">
-					<div class="row">
-						<div class="col">
-							<h1 style="margin:0; padding:0;">Logo</h1>
-						</div>
-						<div class="col-8 text-right fake_links align-self-end" style="margin-right:100px;">
-							<p>Link | Link | Link | Link | Link | Link</p>
-						</div>
-						<div>
-
-						</div>
-					</div>
+					<img src="" alt="">
+					<p class="text-right">Link | Link | Link | Link | Link | Link</p>
 				</nav>
 			</header>
 			<!-- /header -->
