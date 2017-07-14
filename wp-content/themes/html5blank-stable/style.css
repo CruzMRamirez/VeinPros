@@ -101,7 +101,12 @@ nav {
 }
 /* footer */
 .footer {
-
+}
+.copyright {
+	margin: 0;
+}
+.row {
+    margin: 0;
 }
 
 /*------------------------------------*\
