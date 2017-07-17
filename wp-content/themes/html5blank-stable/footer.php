@@ -1,5 +1,9 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
+				<!--Below is where map should be.-->
+				<div id="googleMap">
+					
+				</div>
 
 				<div class="style-bottom">
 				<!--3 divs of info content below-->
