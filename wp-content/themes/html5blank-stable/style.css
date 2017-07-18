@@ -98,20 +98,46 @@ input:focus {
 nav {
 	
 }
-nav button{
-	background-color: #688198;
-	font-size: 1.3vw;
-	color: #fff;
-	border: 2px solid white;
+nav.navbar {
+	padding-bottom: 1px;
 }
-nav button:hover{
+nav #navbarNav ul.menu {
+	margin:0;
+}
+nav #navbarNav li {
+	background-color: #688198;
+	font-size: 16px;
+	color: #fff !important;
+	padding: 4px;
+	display: inline;
+}
+nav #navbarNav li:hover {
 	background-color: #E96969;
 }
-nav button.active{
+nav #navbarNav li.active {
 	background-color: #E34444;
 }
-nav a{
+nav #.img {
 	margin-left: 20px;
+	width: 170px;
+}
+nav #navbarNav ul {
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+}
+.navbar-toggleable-md .navbar-collapse {
+	width: 100%;
+}
+
+nav #navbarNav2 li {
+	font-size: 18px;
+	list-style-type: none;
+	margin-top: 5px;
+	text-align: center;
+}
+nav #navbarNav2 li:hover {
+	background-color: gainsboro;
 }
 /* sidebar */
 .sidebar {
@@ -165,6 +191,12 @@ nav a{
 
 }
 @media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:992px) {
+	.navbar-toggleable-md .navbar-collapse {
+	width: auto;
+}
 
 }
 @media only screen and (min-width:1024px) {

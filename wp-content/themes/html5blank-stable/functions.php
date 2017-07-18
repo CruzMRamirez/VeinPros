@@ -12,6 +12,12 @@
 // Load any external files you have here
 
 /*------------------------------------*\
+	   Including Walker Files
+\*------------------------------------*/
+
+require get_template_directory() . '/inc/walker.php';
+
+/*------------------------------------*\
 	Theme Support
 \*------------------------------------*/
 
@@ -121,6 +127,7 @@ function html5blank_conditional_scripts()
     }
 }
 
+
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
@@ -152,6 +159,12 @@ function register_html5_menu()
         'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
     ));
 }
+
+//regerist custom nav
+function wpb_custom_new_menu() {
+  register_nav_menu('VeinPro-Main-Menu',__( 'VeinPro Main Menu' ));
+}
+
 
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args($args = '')
@@ -369,6 +382,8 @@ add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+
+add_action( 'init', 'wpb_custom_new_menu' );
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
