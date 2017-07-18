@@ -31,20 +31,17 @@
 .content .nav-bot {
   text-align: center;
 }
-.content li.navbl {
+.content .buttonall {
   font-weight: bold;
-  background-color: #b3ecff;
-  margin: 0 10px 0 10px;
-}
-.content li.navbl a {
+  margin: 0 5px 0 5px;
   color: white;
   background-color: #b3ecff;
   text-align: center;
+  padding: 0 5px 0 5px;
   font-size: 18px;
 }
-.content li.navbl a:hover {
+.content .buttonall:hover {
   background-color: #336699;
-  color: white;
 }
 .content .backdwhite {
   background-color: white;
