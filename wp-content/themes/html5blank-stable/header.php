@@ -30,8 +30,8 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 				<nav class="navbar navbar-toggleable-md navbar-light row justify-content-between">
-					<a class="img" href="#"><img src="/wp-content/uploads/2017/07/editedLogo.png" height="110" width="170" alt="Logo"></a>
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation">
+					<a class="img" href="#"><img src="/wp-content/uploads/2017/07/editedLogo.png" height="110" width="170" alt="Logo"></a>
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse align-self-end" id="navbarNav2">
@@ -54,7 +54,7 @@
 								'theme_location' => 'VeinPro-Main-Menu',
 								'container_class' => 'custom-menu-class',
 								'walker' => new Walker_Nav_Primary() 
-								) 
+							 	) 
 							);
 						?>
 					</div>
