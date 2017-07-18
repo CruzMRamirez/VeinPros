@@ -138,6 +138,9 @@ function html5blank_styles()
 
     wp_register_style('footer', get_template_directory_uri() . '/styleSheets/footer.css', array(), '1.0', 'all');
     wp_enqueue_style('footer'); // Enqueue it!
+
+    wp_register_style('veinpropagetemplate', get_template_directory_uri() . '/styleSheets/veinpropagetemplate.css', array(), '1.0', 'all');
+    wp_enqueue_style('veinpropagetemplate'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
