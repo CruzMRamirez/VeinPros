@@ -2,15 +2,15 @@
 			<footer class="footer" role="contentinfo">
 				<!--Below is where map should be.-->
 				<div id="googleMap">
-					
+
 				</div>
 
 				<div class="style-bottom">
 				<!--3 divs of info content below-->
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-6">
 							<div class="row">
-								<div class="col">
+								<div class="col-sm-6">
 									<h3 class="bold-font mbottom">Lorem</h3>
 									<ul>
 										<li>Lorem Ipsum</li>
@@ -21,7 +21,7 @@
 										<li>Lorem</li>
 									</ul>
 								</div>
-								<div class="col">
+								<div class="col-sm-6">
 									<h3 class="bold-font mbottom">Lorem Ipsum</h3>
 									<ul>
 										<li>Lorem Ipsum</li>
@@ -34,7 +34,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-8 center-r-divv">
+						<div class="col-lg-8 col-md-6 center-r-divv">
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</div>
