@@ -62,19 +62,3 @@
 
 			</header>
 			<!-- /header -->
-<!-- 			<nav class="row justify-content-end">
-					<div class="col">
-						<a class="img" href="#"><img src="/wp-content/uploads/2017/07/editedLogo.png" height="110" width="170" alt="Logo"></a>
-					</div>
-					<div class="links hidden-sm-down col-7 row justify-content-end align-self-end">
-						<a <php if ($page == "Home"){ echo "class='active'";} ?>>Home</a>
-						<a <php if ($page == "Symptoms-Veins"){ echo "class='active'";} ?>>Symptoms-Veins</a>
-						<a <php if ($page == "Treatment"){ echo "class='active'";} ?>>Treatment</a>
-						<a <php if ($page == "Testimonials"){ echo "class='active'";} ?>>Testimonials</a>
-						<a <php if ($page == "Blog"){ echo "class='active'";} ?>>My Blog</a>
-						<a <php if ($page == "Contact-Us"){ echo "class='active'";} ?>>Contact-Us</a>
-					</div>
-					<div class="hidden-md-up col row justify-content-end align-self-end">
-						<button ><img src="http://www.iconninja.com/files/327/943/625/more-home-menu-hamburger-icon.png" height="80" width="80"alt=""></button>	
-					</div> 
-				</nav>-->

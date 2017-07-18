@@ -13,3 +13,48 @@
 .content .jumbotron .black_highlight h1 {
     font-size: 36px;
 }
+.content h2 {
+  font-weight: bold;
+}
+.content {
+  font-size: 18px;
+  background-color: #e6f7ff;
+}
+.content .paddlt {
+  padding-left: 20px;
+}
+.content .imgfloat {
+  width: 300px;
+  height: 500px;
+}
+.content .bold-p {
+  font-weight: bold;
+}
+.content .navback {
+  background-color: #e6f7ff;
+  padding: 10px;
+  margin: 0 5PX 0 5PX;
+  padding-top: 0;
+}
+.content a.abot {
+  color: white;
+  background-color: #b3ecff;
+  font-weight: bold;
+  margin: 0 10px 0 10px;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+.content a:hover.abot {
+  background-color: #336699;
+  color: white;
+}
+.content .backdwhite {
+  background-color: white;
+  padding-top: 10px;
+}
+.content .CFPimg {
+  display: block;
+  margin: auto;
+}
