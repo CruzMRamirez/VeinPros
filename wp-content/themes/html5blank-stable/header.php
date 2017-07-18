@@ -39,8 +39,11 @@
 							<div class="col">
 								<?php
 									wp_nav_menu( array(
-									'theme_location' => 'VeinPro-Main-Menu',
-									'container_class' => 'custom-menu-class' ) );
+										'theme_location' => 'VeinPro-Main-Menu',
+										'container_class' => 'custom-menu-class',
+										'walker' => new Walker_Nav_Primary()
+										) 
+									 );
 								?>
 							</div>
 						</div>
@@ -48,8 +51,11 @@
 					<div class="collapse navbar-collapse align-self-end" id="navbarNav">
 						<?php
 							wp_nav_menu( array(
-							'theme_location' => 'VeinPro-Main-Menu',
-							'container_class' => 'custom-menu-class' ) );
+								'theme_location' => 'VeinPro-Main-Menu',
+								'container_class' => 'custom-menu-class',
+								'walker' => new Walker_Nav_Primary() 
+								) 
+							);
 						?>
 					</div>
 				</nav>
