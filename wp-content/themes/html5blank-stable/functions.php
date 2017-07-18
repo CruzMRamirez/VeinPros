@@ -12,6 +12,12 @@
 // Load any external files you have here
 
 /*------------------------------------*\
+	   Including Walker Files
+\*------------------------------------*/
+
+require get_template_directory() . '/inc/walker.php';
+
+/*------------------------------------*\
 	Theme Support
 \*------------------------------------*/
 
