@@ -14,18 +14,14 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="row justify-content-center">
-				<div class="blog-content col-8">
+				<div class="blog-content col-md-8">
 					<?php the_content(); // Dynamic Content ?>
 				</div>
-				<div class="blog-content col-3">
-					<!-- post details -->
-					<span class="date"><?php the_time('F j, Y'); ?></span>
-					<!-- /post details -->
-
-					<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
+				<div class="blog-content col-md-3">
 					<p><?php _e( 'Written by ', 'html5blank' ); the_author(); ?></p>
-
+					<!-- post details -->
+					<p><span class="date"><?php the_time('F j, Y'); ?></span></p>
+					<!-- /post details -->
 				</div>
 			</div>
 

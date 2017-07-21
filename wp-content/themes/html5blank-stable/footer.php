@@ -2,7 +2,7 @@
 			<footer class="footer" role="contentinfo">
 				<!--Below is where map should be.-->
 				<div class="embed-responsive embed-responsive-16by9" id="googleMap">
-					<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.105597273587!2d-119.76769768470898!3d36.839946979940414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945d355e920537%3A0x68e7fc143abf795e!2sVein+Pros+Medical+Group!5e0!3m2!1sen!2sus!4v1500595066639" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.105597273587!2d-119.76769768470898!3d36.839946979940414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945d355e920537%3A0x68e7fc143abf795e!2sVein+Pros+Medical+Group!5e0!3m2!1sen!2sus!4v1500595066639" frameborder="0" style="border:0" scrolling="no" allowfullscreen></iframe>
 				</div>
 
 				<div class="style-bottom">
