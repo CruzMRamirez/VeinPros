@@ -18,6 +18,9 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.footer #googleMap {
+  max-height: 300px;
+}
 .footer .style-bottom {
   color: black;
 }
