@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 	<main role="main">
 		<!-- section -->
-		<section class="content">
-            <section class="veincontent">
+		<section class="veincontent">
 			<?php $bgImage = get_the_post_thumbnail_url(); ?>
 			<div class="jumbotron row align-items-center justify-content-center" style="background-image:url(<?php echo $bgImage; ?>);">
 					<div class="col-12 black_highlight text-center">
