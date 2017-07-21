@@ -33,7 +33,7 @@
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<a class="img" href="#"><img src="/wp-content/uploads/2017/07/editedLogo.png" height="110" width="170" alt="Logo"></a>
+					<a href="<?php echo home_url(); ?>"><img src="/wp-content/uploads/2017/07/editedLogo.png" height="110" width="170" alt="Logo"></a>
 					<div class="collapse navbar-collapse align-self-end" id="navbarNav2">
 						<div class="hidden-lg-up row justify-content-center">
 							<div class="col">

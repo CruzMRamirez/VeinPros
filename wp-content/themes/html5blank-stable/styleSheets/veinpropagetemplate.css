@@ -19,7 +19,6 @@
 .veincontent {
   font-size: 18px;
   background-color: #e6f7ff;
-  padding: 15px 10px 15px 0;
 }
 .veincontent .paddlt {
   padding-left: 20px;
@@ -61,4 +60,8 @@
 .veincontent .CFPimg {
   display: block;
   margin: auto;
+}
+iframe { 
+  overflow:hidden; 
+  pointer-events:none;
 }
