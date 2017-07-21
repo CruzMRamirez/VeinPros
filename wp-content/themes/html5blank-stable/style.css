@@ -141,6 +141,12 @@ nav #navbarNav2 li:hover {
 nav #navbarNav2 li.active {
 	background-color: #E34444;
 }
+nav button span {
+    font-size: 22px;
+}
+nav #navbarNav a{
+	color: #fff;
+}
 /* sidebar */
 .sidebar {
 
@@ -193,7 +199,7 @@ nav #navbarNav2 li.active {
 
 }
 @media only screen and (min-width:768px) {
-
+	
 }
 @media only screen and (min-width:992px) {
 	.navbar-toggleable-md .navbar-collapse {

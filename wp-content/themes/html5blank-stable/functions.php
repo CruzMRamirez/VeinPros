@@ -148,6 +148,9 @@ function html5blank_styles()
 
     wp_register_style('veinpropagetemplate', get_template_directory_uri() . '/styleSheets/veinpropagetemplate.css', array(), '1.0', 'all');
     wp_enqueue_style('veinpropagetemplate'); // Enqueue it!
+
+    wp_register_style('blog', get_template_directory_uri() . '/styleSheets/blog.css', array(), '1.0', 'all');
+    wp_enqueue_style('blog'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -468,7 +471,29 @@ function create_post_type_html5()
         ) // Add Category and Post Tags support
     ));
 }
-
+function register_post_type_taxonomy() {
+    register_taxonomy('blog_post_type', 'post',
+        array(
+            'labels' => array(
+                'name' => __('Post Types', 'html5blank'),
+                'singular_name' => __('Post Type', 'html5blank'),
+                'add_new_item' => __('Add New Post Type', 'html5blank'),
+                'edit_item' => __('Edit Post Type', 'html5blank'),
+                'new_item' => __('New Post Type', 'html5blank'),
+                'view_item' => __('View Post Type', 'html5blank'),
+                'search_items' => __('Search Post Types', 'html5blank'),
+                'not_found' => __('No Post Types found', 'html5blank')
+            ),
+            'hierarchical'    => true,
+            'capabilities' => array(
+                'manage_terms' => '',
+                'edit_terms' => '',
+                'delete_terms' => '',
+                'assign_terms' => 'edit_posts'
+            ),
+        )
+    );
+}
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/

@@ -1,4 +1,3 @@
-<?php session_start(); $_SESSION['page'] = 'Blog';?>
 <?php get_header(); ?>
 
 	<main role="main">
