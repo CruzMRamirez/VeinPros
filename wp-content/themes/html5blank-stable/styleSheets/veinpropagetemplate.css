@@ -63,6 +63,7 @@
 .veincontent a:hover.abot {
   background-color: #336699;
   color: white;
+  cursor: pointer;
 }
 .veincontent .backdwhite {
   background-color: white;
