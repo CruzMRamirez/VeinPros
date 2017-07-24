@@ -77,3 +77,13 @@ iframe {
   overflow:hidden;
   pointer-events:none;
 }
+.veincontent .boutus {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.veincontent .txtunderline {
+  text-decoration: underline;
+}
+.veincontent #nobullets {
+  list-style-type: none;
+}
