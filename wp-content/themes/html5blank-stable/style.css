@@ -3,7 +3,7 @@
 	Theme URI: http:/veinpros.md
 	Description: This is a theme created to meet VeinPros Requests
 	Version: 1.4.3
-	Author: Cruz Ramirez (@toddmotto)
+	Author: Cruz Ramirez (@cruzRamirez)
 	Author URI: http://cruz-ramirez.com
 	Tags: VeinPros, Doctors, Cruz, DevTeam
 
@@ -171,7 +171,9 @@ nav #navbarNav a{
 .row {
     margin: 0;
 }
-
+input, select, textarea {
+	width: 100%;
+}
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
