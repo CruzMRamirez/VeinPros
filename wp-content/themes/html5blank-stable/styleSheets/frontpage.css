@@ -4,14 +4,20 @@
 .front-page .jumbotron {
     margin: 0;
     padding: 0;
-    min-height: 500px;
-    background-image: url();
+    height: 500px;
     background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
 }
 .front-page .jumbotron .black_highlight {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 0;
 }
 .front-page .jumbotron .black_highlight h1 {
     font-size: 36px;
@@ -56,4 +62,9 @@
 .front-page h2 {
     margin-top: 20px;
     margin-bottom: 10px;
+}
+video.homepage--video {
+     background-color: gray;
+	 width: 100%;
+	 height: auto;
 }
