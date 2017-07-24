@@ -98,6 +98,17 @@ input:focus {
 nav {
 	
 }
+.loadbtn {
+	cursor: pointer;
+	background-color: rgba(104, 129, 152, .7);
+}
+.loadbtn:hover {
+	background-color: rgba(104, 129, 152, 1);
+}
+.loading {
+	cursor: default !important;
+	background-color: #E96969 !important;
+}
 nav.navbar {
 	padding-bottom: 1px;
 }

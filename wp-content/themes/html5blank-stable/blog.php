@@ -9,35 +9,31 @@
 							<h1><?php the_title(); ?></h1>
 					</div>
 			</div>
+            
+
             <h1 class="text-center"><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center post-container">
+                
                 <?php
-                    $args = array(
+                     $args = array(
                         'post_type' => 'post',
-                        'order' => 'DESC',
-                        'posts_per_page' => 6  
+                        'order' => 'DESC' 
                     );
                     $the_query = new WP_Query( $args );
-                    if( $the_query -> have_posts() ) : while( $the_query -> have_posts() ) : $the_query -> the_post();
-                ?>  
-                    <div class="col-10 row justify-content-around blog-post">
-                        <div class="col-md-3 blog-min row justify-content-center align-items-center">
-                            <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                    <?php the_post_thumbnail(array(500,500)); // Declare pixel size you need inside the array ?>
-                                </a>
-                            <?php endif; ?>
-                        </div>
-                        <hr class="hidden-md-up" style="background-color: white; margin-top: 20px; margin-bottom: 10px; height: 1px; width: 80%;">
-                        <div class="col-md-9 blog-min blog-col">
-                            <h1 class="text-center"><a id="ucsf-fresno-update-<?php the_ID(); ?>" href="<?php the_permalink(); ?>" > <?php the_title(); ?> </a></h1>
-                            <?php the_excerpt(); ?>
-                        </div>
-                    </div>
-                <?php endwhile; ?>
-                <?php endif; ?>
+                    if( $the_query -> have_posts()):
+                        while( $the_query -> have_posts() ): $the_query -> the_post();
+                            get_template_part('postloopcontent', get_post_format() );
+                        endwhile;
+                    endif;
+                ?>
             </div>
-
+            <div class="row justify-content-center">
+                <div class="col-10" style="margin-bottom: 20px;">
+                    <a class="btn btn-lg btn-block loadbtn" data-url="<?php echo admin_url('admin-ajax.php');?>" data-page="1" style="font-size:30px;"> 
+                    <span class="text">Read More</span>
+                    </a>
+                </div>
+            </div>
 		</section>
 		<!-- /section -->
 	</main>
