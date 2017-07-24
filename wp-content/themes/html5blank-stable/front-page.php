@@ -33,7 +33,6 @@
         <div class="row videoRow hidden-sm-down colorize">
             <div class="col-8">
                 <div class="bigVideo">
-                    <video class="homepage--video hidden-sm-down" src=""></video>
                 </div>
             </div>
             <div class="col-4">
