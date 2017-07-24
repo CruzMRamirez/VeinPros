@@ -22,6 +22,17 @@
 }
 .veincontent .paddlt {
   padding-left: 20px;
+  padding-top: 15px;
+}
+.veincontent .alignright {
+  max-width: 25vw;
+  float: right;
+  margin: 5px 0 20px 20px;
+  max-height: 450px;
+}
+.veincontent #ulmargin0 {
+  margin-bottom: 0;
+  padding-bottom: 15px;
 }
 .veincontent #TreatmentPad {
   padding: 15px;
@@ -52,6 +63,7 @@
 .veincontent a:hover.abot {
   background-color: #336699;
   color: white;
+  cursor: pointer;
 }
 .veincontent .backdwhite {
   background-color: white;
@@ -61,7 +73,17 @@
   display: block;
   margin: auto;
 }
-iframe { 
-  overflow:hidden; 
+iframe {
+  overflow:hidden;
   pointer-events:none;
+}
+.veincontent .boutus {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.veincontent .txtunderline {
+  text-decoration: underline;
+}
+.veincontent #nobullets {
+  list-style-type: none;
 }
