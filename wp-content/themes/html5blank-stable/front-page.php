@@ -2,7 +2,7 @@
     <div class="front-page">
     <?php $bgImage = get_the_post_thumbnail_url(); ?>
         <div class="jumbotron row align-items-center justify-content-center" style="background-image:url(<?php echo $bgImage; ?>);">
-            <video class="homepage--video hidden-sm-down" src="" autoplay="autoplay" loop="loop"></video>
+            <video class="homepage--video hidden-sm-down" src="" autoplay="autoplay" loop="loop" muted></video>
             <div class="col-12 black_highlight text-center">
                 <h1>Welcome to VeinPros</h1>
             </div>
