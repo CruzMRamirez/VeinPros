@@ -28,7 +28,7 @@
 				success : function( response ){
 					that.data('page', newPage);
 					$('.post-container').append( response );
-					// that.removeClass('loading');
+					that.removeClass('loading');
 				}
 
 			});
