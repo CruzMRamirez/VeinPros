@@ -1,6 +1,8 @@
 <?php /* Template Name: VeinPros front-Page Template */ get_header(); ?>
     <div class="front-page">
-        <div class="jumbotron row align-items-center justify-content-center">
+    <?php $bgImage = get_the_post_thumbnail_url(); ?>
+        <div class="jumbotron row align-items-center justify-content-center" style="background-image:url(<?php echo $bgImage; ?>);">
+            <video class="homepage--video hidden-sm-down" style="background-color: white;" src="" autoplay="autoplay" loop="loop"></video>
             <div class="col-12 black_highlight text-center">
                 <h1>Welcome to VeinPros</h1>
             </div>
@@ -30,7 +32,8 @@
         
         <div class="row videoRow hidden-sm-down colorize">
             <div class="col-8">
-                <div class="bigVideo"></div>
+                <div class="bigVideo">
+                </div>
             </div>
             <div class="col-4">
                 <div class="col-md-12 col-sm-6 colorize" style="margin-bottom: 2vw;">
@@ -67,4 +70,23 @@
             </div>
         </div>
     </div>
+    <script>
+        jQuery(document).ready(function() {
+        var width = jQuery(window).width();
+        if(width <= 767){
+                jQuery("video").removeAttr("src");
+            }
+            else {
+                jQuery("video").attr("src", "/wp-content/uploads/2017/07/BgVideo.mp4");
+            }
+        }); 
+        jQuery(window).on('resize', function(){
+        if(jQuery(this).width() <= 767){
+            jQuery("video").removeAttr("src");
+        }
+        else {
+            jQuery("video").attr("src", "/wp-content/uploads/2017/07/BgVideo.mp4");
+        }
+        });
+    </script>
 <?php get_footer();?>
