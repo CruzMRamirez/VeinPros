@@ -13,23 +13,20 @@
 								<div class="col-sm-6">
 									<h3 class="bold-font mbottom">Lorem</h3>
 									<ul>
-										<li>Lorem Ipsum</li>
-										<li>Lorem Ipsum</li>
-										<li>Lorem Ipsum</li>
-										<li>Lorem Ipsum Dolor</li>
-										<li>Lorem</li>
-										<li>Lorem</li>
+										<li><a class="alink" href="#">Symtoms-Veins</a></li>
+										<li><a class="alink" href="#">Treatments</a></li>
+										<li><a class="alink" href="#">Testimonials</a></li>
+										<li><a class="alink" href="#">About Us</a></li>
+										<li><a class="alink" href="#">Contact Us</a></li>
 									</ul>
 								</div>
 								<div class="col-sm-6">
 									<h3 class="bold-font mbottom">Lorem Ipsum</h3>
 									<ul>
-										<li>Lorem Ipsum</li>
-										<li>Lorem Ipsum Dolor Sit</li>
-										<li>Lorem Ipsum</li>
-										<li>Lorem</li>
-										<li>Lorem</li>
-										<li>Lorem Ipsum Dolor</li>
+										<li>7191 N. Millbrook Avenue</li>
+										<li>Fresno, CA 93720</li>
+										<li>Phone: (559) 261-0266</li>
+										<li>Fax: (559) 261-1307</li>
 									</ul>
 								</div>
 							</div>

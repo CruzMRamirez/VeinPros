@@ -33,6 +33,10 @@
 .footer .mbottom {
   margin-bottom: 20px;
 }
+.footer .alink {
+  color: black;
+  text-decoration: underline;
+}
 .footer .center-r-divv {
   padding-top: 35px;
 }
