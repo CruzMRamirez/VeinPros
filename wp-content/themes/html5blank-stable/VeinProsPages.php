@@ -15,9 +15,9 @@
 
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-				<?php the_content(); ?>
-
+				<div class="paddlt">
+					<?php the_content(); ?>
+				</div>
 			</article>
 			<!-- /article -->
 

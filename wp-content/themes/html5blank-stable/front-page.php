@@ -30,21 +30,21 @@
 		<?php endif; ?>
 
         
-        <div class="row videoRow hidden-sm-down colorize">
+        <div class="row videoRow hidden-sm-down">
             <div class="col-8">
                 <div class="bigVideo">
                 </div>
             </div>
             <div class="col-4">
-                <div class="col-md-12 col-sm-6 colorize" style="margin-bottom: 2vw;">
+                <div class="col-md-12 col-sm-6" style="margin-bottom: 2vw;">
                     <div class="smallVideo"></div>
                 </div>
-                <div class="col-md-12 col-sm-6 colorize" style="margin-top: 1vw;">
+                <div class="col-md-12 col-sm-6" style="margin-top: 1vw;">
                     <div class="smallVideo"></div>
                 </div>
             </div>
         </div>
-        <div class="row videoRow hidden-md-up colorize">
+        <div class="row videoRow hidden-md-up">
             <div class="col-12">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
