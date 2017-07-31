@@ -11,35 +11,38 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="row">
 								<div class="col-sm-6">
-									<h3 class="bold-font mbottom">Lorem</h3>
-									<ul>
-										<li><a class="alink" href="#">Symtoms-Veins</a></li>
-										<li><a class="alink" href="#">Treatments</a></li>
-										<li><a class="alink" href="#">Testimonials</a></li>
-										<li><a class="alink" href="#">About Us</a></li>
-										<li><a class="alink" href="#">Contact Us</a></li>
-									</ul>
+									<h3 class="bold-font ">VeinPros</h3>
+									<?php
+										wp_nav_menu( array(
+											'theme_location' => 'footer-menu',
+											'container_class' => 'custom-menu-class' ) );
+									?>
 								</div>
 								<div class="col-sm-6">
-									<h3 class="bold-font mbottom">Lorem Ipsum</h3>
+									<h3 class="bold-font">Contact Us</h3>
 									<ul>
 										<li>7191 N. Millbrook Avenue</li>
 										<li>Fresno, CA 93720</li>
 										<li>Phone: (559) 261-0266</li>
 										<li>Fax: (559) 261-1307</li>
+										<li><a class="alink" href="<?php echo home_url(); ?>/contact-us">Email Us</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-8 col-md-6 center-r-divv">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="col-lg-8 col-md-6">
+							<h3 class="bold-font mbottom">DISCLAIMER: THIS WEBSITE DOES NOT PROVIDE MEDICAL ADVICE</h3>
+
+							<p>The information contained on this website is for informational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health care provider with any questions you may have regarding a medical condition or treatment and before undertaking a new health care regimen, and never disregard professional medical advice or delay in seeking it because of something you have read on this website.​</p>
 						</div>
 					</div>
 				<!-- copyright -->
 				<div class="text-center">
 					<p class="copyright">
-						&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-						<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+						&copy; Copyright 2007-2012 VeinPros Medical Group - All Rights Reserved
+					</p>
+					<p class="copyright"  style="color: #444; display: none;"> 
+						<?php _e('Created by', 'VeinPros'); ?> <a style="color: #444;" href="<?php echo home_url(); ?>">VeinPros</a> and <a  style="color: #444;" href="http://www.cruz-ramirez.com">Cruz Ramirez</a>
 					</p>
 				</div>
 			</div>

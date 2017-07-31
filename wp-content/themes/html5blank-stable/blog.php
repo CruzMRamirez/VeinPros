@@ -10,28 +10,29 @@
 					</div>
 			</div>
             
-
-            <h1 class="text-center"><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
-            <div class="row justify-content-center post-container">
-                
-                <?php
-                     $args = array(
-                        'post_type' => 'post',
-                        'order' => 'DESC' 
-                    );
-                    $the_query = new WP_Query( $args );
-                    if( $the_query -> have_posts()):
-                        while( $the_query -> have_posts() ): $the_query -> the_post();
-                            get_template_part('postloopcontent', get_post_format() );
-                        endwhile;
-                    endif;
-                ?>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-10" style="margin-bottom: 20px;">
-                    <a class="btn btn-lg btn-block loadbtn" data-url="<?php echo admin_url('admin-ajax.php');?>" data-page="1" style="font-size:30px;"> 
-                    <span class="text">Read More</span>
-                    </a>
+            <div class="paddlt">
+                <h1 class="text-center"><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
+                <div class="row justify-content-center post-container">
+                    
+                    <?php
+                        $args = array(
+                            'post_type' => 'post',
+                            'order' => 'DESC' 
+                        );
+                        $the_query = new WP_Query( $args );
+                        if( $the_query -> have_posts()):
+                            while( $the_query -> have_posts() ): $the_query -> the_post();
+                                get_template_part('postloopcontent', get_post_format() );
+                            endwhile;
+                        endif;
+                    ?>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10" style="margin-bottom: 20px;">
+                        <a class="btn btn-lg btn-block loadbtn" data-url="<?php echo admin_url('admin-ajax.php');?>" data-page="1" style="font-size:30px;"> 
+                        <span class="text">Read More</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 		</section>
