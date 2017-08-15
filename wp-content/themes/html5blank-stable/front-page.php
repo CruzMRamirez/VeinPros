@@ -32,15 +32,18 @@
         
         <div class="row videoRow hidden-sm-down">
             <div class="col-8">
-                <div class="bigVideo">
-                </div>
+                <video class="bigVideo" poster="/wp-content/uploads/2017/08/Vein-Pros-m4v-image.jpg" src="/wp-content/uploads/2017/08/Vein-Pros.m4v" allowfullscreen controls>
+
+                </video>
             </div>
             <div class="col-4">
                 <div class="col-md-12 col-sm-6" style="margin-bottom: 2vw;">
-                    <div class="smallVideo"></div>
+                    <video class="smallVideo" poster="/wp-content/uploads/2017/08/Web-Loop-m4v-image.jpg" src="/wp-content/uploads/2017/08/Web-Loop.m4v" allowfullscreen controls>
+
+                    </video>
                 </div>
                 <div class="col-md-12 col-sm-6" style="margin-top: 1vw;">
-                    <div class="smallVideo"></div>
+                    <iframe class="smallVideo" src="https://www.youtube.com/embed/JwWlLTzXtdo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -49,13 +52,17 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                            <div class="bigVideo bigvideomobile"></div>
+                                <video class="bigVideo bigvideomobile" poster="/wp-content/uploads/2017/08/Vein-Pros-m4v-image.jpg" src="/wp-content/uploads/2017/08/Vein-Pros.m4v" allowfullscreen controls>
+
+                                </video>
                             </div>
                             <div class="carousel-item">
-                                <div class="bigVideo bigvideomobile"></div>
+                                <video class="bigVideo bigvideomobile" poster="/wp-content/uploads/2017/08/Web-Loop-m4v-image.jpg" src="/wp-content/uploads/2017/08/Web-Loop.m4v" allowfullscreen controls>
+
+                                </video>
                             </div>
                             <div class="carousel-item">
-                                <div class="bigVideo bigvideomobile"></div>
+                                <iframe class="bigVideo bigvideomobile" src="https://www.youtube.com/embed/JwWlLTzXtdo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -74,18 +81,18 @@
         jQuery(document).ready(function() {
         var width = jQuery(window).width();
         if(width <= 767){
-                jQuery("video").removeAttr("src");
+                jQuery(".homepage--video").removeAttr("src");
             }
             else {
-                jQuery("video").attr("src", "/wp-content/uploads/2017/07/BgVideo.mp4");
+                jQuery(".homepage--video").attr("src", "/wp-content/uploads/2017/08/Web-Loop.m4v");
             }
         }); 
         jQuery(window).on('resize', function(){
         if(jQuery(this).width() <= 767){
-            jQuery("video").removeAttr("src");
+            jQuery(".homepage--video").removeAttr("src");
         }
         else {
-            jQuery("video").attr("src", "/wp-content/uploads/2017/07/BgVideo.mp4");
+            jQuery(".homepage--video").attr("src", "/wp-content/uploads/2017/08/Web-Loop.m4v");
         }
         });
     </script>

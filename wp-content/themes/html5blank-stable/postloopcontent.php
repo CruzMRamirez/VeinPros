@@ -13,7 +13,7 @@
                 </div>
                 <hr class="hidden-md-up" style="background-color: white; margin-top: 20px; margin-bottom: 10px; height: 1px; width: 80%;">
                 <div class="col-md-9 blog-min blog-col">
-                    <h1 class="text-center"><a id="ucsf-fresno-update-<?php the_ID(); ?>" href="<?php the_permalink(); ?>" > <?php the_title(); ?> </a></h1>
+                    <h1 class="text-center"><a id="ucsf-fresno-update-<?php the_ID(); ?>" class="view-article" href="<?php the_permalink(); ?>" > <?php the_title(); ?> </a></h1>
                     <?php the_excerpt(); ?>
                 </div>
             </div>
