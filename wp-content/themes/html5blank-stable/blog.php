@@ -29,9 +29,19 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-10" style="margin-bottom: 20px;">
-                        <a class="btn btn-lg btn-block loadbtn" data-url="<?php echo admin_url('admin-ajax.php');?>" data-page="1" style="font-size:30px;"> 
-                        <span class="text">Read More</span>
-                        </a>
+                    <?php
+                                $count_posts = wp_count_posts();
+                                
+                                $published_posts = $count_posts->publish;
+                                
+                                if($published_posts >= 4){
+                                    echo '<a class="btn btn-lg btn-block loadbtn" data-url="' . admin_url('admin-ajax.php') . '" data-page="1" style="font-size:30px;"> 
+                                            <span class="text">
+                                            Load More Posts
+                                            </span>
+                                          </a>';
+                                }
+                    ?>
                     </div>
                 </div>
             </div>

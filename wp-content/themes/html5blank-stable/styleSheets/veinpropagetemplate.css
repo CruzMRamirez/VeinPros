@@ -22,6 +22,9 @@
 }
 .veincontent .paddlt {
   padding: 20px;
+  content: "";
+  clear: both;
+  display: table;
 }
 .veincontent .alignright {
   max-width: 25vw;
@@ -69,7 +72,7 @@
   display: block;
   margin: auto;
 }
-iframe {
+.footer iframe {
   overflow:hidden;
   pointer-events:none;
 }
