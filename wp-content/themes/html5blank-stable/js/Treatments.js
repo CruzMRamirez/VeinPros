@@ -11,7 +11,7 @@
 																					'<p>First, a local anesthetic is applied prior to the procedure. Then, using ultrasound guidance, a small incision is made in the skin and the ClosureFast catheter is inserted into the vein. Using radiofrequency energy, the catheter heats the diseased vein, causing it to collapse. The catheter is withdrawn into the next section of vein, and the process is repeated until the whole vein has been treated. The insertion site is then bandaged and patients are discharged, returning to normal activities within a few days.</p>' +
 																					'</div>' +
 																					'<div class="col-md-5">' +
-																					'<img src="/wp-content/uploads/2017/07/vnus-catheter-ablation-diagram.jpg" class="CFPimg img-responsive" alt="vnus-catheter-ablation diagram">' +
+																					'<img src="/wp-content/uploads/2017/07/vnus-catheter-ablation-diagram.jpg" class="  img-responsive" alt="vnus-catheter-ablation diagram">' +
 																				'</div>' +
 																			'</div>';
 
