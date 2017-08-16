@@ -29,7 +29,7 @@
 																'</div>' +
 																'<div class="col-md-5">' +
 																	'<img src="/wp-content/uploads/2017/08/VeinPros19.jpg" class="CFPimg img-responsive" alt="EndovenousLaser">' +
-																'</div>'
+																'</div>' +
 															'</div>';
 
 		$("#Endovenous").click(function(){
