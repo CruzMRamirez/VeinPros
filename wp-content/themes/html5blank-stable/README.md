@@ -16,7 +16,7 @@ Cruz Ramirez, Roque Centeno, J-Rabe.
 ### MEDIA WILL TAKE YOU TO ALL CONTENT(IMAGES, VIDEO) THAT IS INCLUDED WITHIN THE SITE.
 
 
-
+NOTE: For most of these chages you must be in /wp-admin/
 
 ### How to get to the Customize Menu
 --------
@@ -57,7 +57,7 @@ In order to enable or get tools, you'll first need to be on the dashboard page f
 
 ### Contact
 --------
-In order to access the contacts option, you'll first need to be on the wp-admin page for UCSF.
+In order to access the contacts option, you'll first need to be on the wp-admin page for Veinpros.
 
 1. Contact will offer ways on how to create fill out forms with in your site.
 2. Hovering over Contact will offer more options in a sub menu, either viewing current contact or creating a new one.
