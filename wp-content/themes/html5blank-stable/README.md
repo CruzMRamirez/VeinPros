@@ -175,11 +175,14 @@ Here and onwards you can start customizing how the form will be displayed in an 
 Example:
 ---
 To: JohnSmith@Johnsmith.com
+
 From: [your-name] [your-email]
+
 Subject: [your-subject]
 
 Message Body:
 From [your-name] [your-email]
+
 Subject [your-subject]
 
 [your-message]
