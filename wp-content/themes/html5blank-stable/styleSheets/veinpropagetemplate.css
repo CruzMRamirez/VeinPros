@@ -68,6 +68,9 @@
   padding-top: 10px;
   min-height: 420px;
 }
+.veincontent .hpcenter {
+  text-align: center;
+}
 .veincontent .CFPimg {
   display: block;
   margin: auto;
@@ -75,6 +78,10 @@
 .footer iframe {
   overflow:hidden;
   pointer-events:none;
+}
+.veincontent a.current {
+  background-color: #336699;
+  color: white;
 }
 .veincontent .boutus {
   padding-top: 40px;
