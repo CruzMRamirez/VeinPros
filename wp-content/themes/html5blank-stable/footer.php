@@ -31,7 +31,7 @@
 							</div>
 						</div>
 						<div class="col-lg-8 col-md-6">
-							<h3 class="bold-font mbottom">DISCLAIMER: THIS WEBSITE DOES NOT PROVIDE MEDICAL ADVICE</h3>
+							<h3 class="bold-font mbottom">DISCLAIMER:</h3>
 
 							<p>The information contained on this website is for informational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health care provider with any questions you may have regarding a medical condition or treatment and before undertaking a new health care regimen, and never disregard professional medical advice or delay in seeking it because of something you have read on this website.​</p>
 						</div>
@@ -41,7 +41,7 @@
 					<p class="copyright">
 						&copy; Copyright 2007-2012 VeinPros Medical Group - All Rights Reserved
 					</p>
-					<p class="copyright"  style="color: #444; display: none;"> 
+					<p class="copyright"  style="color: #444;"> 
 						<?php _e('Created by', 'VeinPros'); ?> <a style="color: #444;" href="<?php echo home_url(); ?>">VeinPros</a> and <a  style="color: #444;" href="http://www.cruz-ramirez.com">Cruz Ramirez</a>
 					</p>
 				</div>

@@ -32,14 +32,20 @@
         
         <div class="row videoRow hidden-sm-down">
             <div class="col-8">
-                <video class="bigVideo" poster="/wp-content/uploads/2017/08/Vein-Pros-m4v-image.jpg" src="/wp-content/uploads/2017/08/Vein-Pros.m4v" allowfullscreen controls>
-
+                <video class="bigVideo" poster="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Vein-Pros-m4v-image.jpg" allowfullscreen controls>
+                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/08/Vein-Pros.m4v" type="video/m4v">
+                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Vein-Pros.mp4" type="video/mp4">
+                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Vein-Pros.ogg" type="video/ogg">
+                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Vein-Pros.webm" type="video/webm">
                 </video>
             </div>
             <div class="col-4">
                 <div class="col-md-12 col-sm-6" style="margin-bottom: 2vw;">
-                    <video class="smallVideo" poster="/wp-content/uploads/2017/08/Web-Loop-m4v-image.jpg" src="/wp-content/uploads/2017/08/Web-Loop.m4v" allowfullscreen controls>
-
+                    <video class="smallVideo" poster="<?php echo home_url(); ?>/wp-content/uploads/2017/08/Web-Loop-m4v-image.jpg" allowfullscreen controls>
+                        <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/08/Web-loop.m4v" type="video/m4v">
+                        <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Web-loop.mp4" type="video/mp4">
+                        <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Web-loop.ogg" type="video/ogg">
+                        <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Web-loop.webm" type="video/webm">
                     </video>
                 </div>
                 <div class="col-md-12 col-sm-6" style="margin-top: 1vw;">
@@ -52,13 +58,19 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <video class="bigVideo bigvideomobile" poster="/wp-content/uploads/2017/08/Vein-Pros-m4v-image.jpg" src="/wp-content/uploads/2017/08/Vein-Pros.m4v" allowfullscreen controls>
-
+                                <video class="bigVideo bigvideomobile" poster="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Vein-Pros-m4v-image.jpg" allowfullscreen controls>
+                                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/08/Vein-Pros.m4v" type="video/m4v">
+                                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Vein-Pros.mp4" type="video/mp4">
+                                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Vein-Pros.ogg" type="video/ogg">
+                                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Vein-Pros.webm" type="video/webm">
                                 </video>
                             </div>
                             <div class="carousel-item">
-                                <video class="bigVideo bigvideomobile" poster="/wp-content/uploads/2017/08/Web-Loop-m4v-image.jpg" src="/wp-content/uploads/2017/08/Web-Loop.m4v" allowfullscreen controls>
-
+                                <video class="bigVideo bigvideomobile" poster="<?php echo home_url(); ?>/wp-content/uploads/2017/08/Web-Loop-m4v-image.jpg" allowfullscreen controls>
+                                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/08/Web-loop.m4v" type="video/m4v"> 
+                                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Web-loop.mp4" type="video/mp4">
+                                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Web-loop.ogg" type="video/ogg">
+                                    <source src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/Web-loop.webm" type="video/webm">
                                 </video>
                             </div>
                             <div class="carousel-item">
@@ -84,7 +96,7 @@
                 jQuery(".homepage--video").removeAttr("src");
             }
             else {
-                jQuery(".homepage--video").attr("src", "/wp-content/uploads/2017/08/Web-Loop.m4v");
+                jQuery(".homepage--video").attr("src", "<?php echo home_url(); ?>/wp-content/uploads/2017/08/Web-loop.m4v");
             }
         }); 
         jQuery(window).on('resize', function(){
@@ -92,7 +104,7 @@
             jQuery(".homepage--video").removeAttr("src");
         }
         else {
-            jQuery(".homepage--video").attr("src", "/wp-content/uploads/2017/08/Web-Loop.m4v");
+            jQuery(".homepage--video").attr("src", "<?php echo home_url(); ?>/wp-content/uploads/2017/08/Web-loop.m4v");
         }
         });
     </script>
