@@ -1,0 +1,101 @@
+.veincontent .jumbotron {
+    margin: 0;
+    padding: 0;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.veincontent .jumbotron .black_highlight {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+}
+.veincontent .jumbotron .black_highlight h1 {
+    font-size: 36px;
+}
+.veincontent h2 {
+  font-weight: bold;
+}
+.veincontent {
+  font-size: 18px;
+  background-color: #e6f7ff;
+}
+.veincontent .paddlt {
+  padding: 20px;
+  content: "";
+  clear: both;
+  display: table;
+}
+.veincontent .alignright {
+  max-width: 25vw;
+  float: right;
+  margin: 5px 0 20px 20px;
+  max-height: 450px;
+}
+.veincontent #ulmargin0 {
+  margin-bottom: 0;
+  padding-bottom: 15px;
+}
+.veincontent #TreatmentPad {
+  padding: 15px;
+}
+.veincontent .bold-p {
+  font-weight: bold;
+}
+.veincontent .navback {
+  background-color: #e6f7ff;
+  padding: 10px;
+  margin: 0 5PX 0 5PX;
+  padding-top: 0;
+}
+.veincontent a.abot {
+  color: white;
+  background-color: #b3ecff;
+  font-weight: bold;
+  margin: 0 10px 0 10px;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+.veincontent a:hover.abot {
+  background-color: #336699;
+  color: white;
+  cursor: pointer;
+}
+.veincontent .backdwhite {
+  background-color: white;
+  padding-top: 10px;
+  min-height: 420px;
+}
+.veincontent .hpcenter {
+  text-align: center;
+}
+.veincontent .CFPimg {
+  display: block;
+  margin: auto;
+}
+.footer iframe {
+  overflow:hidden;
+  pointer-events:none;
+}
+.veincontent a.current {
+  background-color: #336699;
+  color: white;
+}
+.veincontent .boutus {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.veincontent .txtunderline {
+  text-decoration: underline;
+}
+.veincontent #nobullets {
+  list-style-type: none;
+}
+@media only screen and (min-width:576px) {
+	.veincontent a.abot {
+    font-size: calc(6px + 1vw);
+  }   
+}
+

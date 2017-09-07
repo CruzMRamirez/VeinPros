@@ -1,7 +1,7 @@
 <?php
 /*
- *  Author: Todd Motto | @toddmotto
- *  URL: html5blank.com | @html5blank
+ *  Author: Cruz Ramirez | @cruzRamirez
+ *  URL: cruz-ramirez.com | @cruzRamirez
  *  Custom functions, support, custom post types and more.
  */
 
@@ -10,6 +10,13 @@
 \*------------------------------------*/
 
 // Load any external files you have here
+
+/*------------------------------------*\
+	   Including Walker Files
+\*------------------------------------*/
+
+require get_template_directory() . '/inc/walker.php';
+require get_template_directory() . '/inc/ajax.php';
 
 /*------------------------------------*\
 	Theme Support
@@ -98,8 +105,20 @@ function html5blank_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
+        wp_register_script('jquery-3.2.1', get_template_directory_uri() . '/js/jquery-3.2.1.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('jquery-3.2.1'); // Enqueue it!
+
+        wp_register_script('tether', get_template_directory_uri() . '/js/tether.min.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('tether'); // Enqueue it!
+
+        wp_register_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.js', array(), '1.0.0'); // Custom scripts
+        wp_enqueue_script('bootstrapjs'); // Enqueue it!
+
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
+
+        wp_register_script('Treatmentsjs', get_template_directory_uri() . '/js/Treatments.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('Treatmentsjs'); // Enqueue it!
     }
 }
 
@@ -112,14 +131,30 @@ function html5blank_conditional_scripts()
     }
 }
 
+
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
     wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
 
+    wp_register_style('bootstrapcss', get_template_directory_uri() . '/styleSheets/bootstrap.css', array(), '1.0', 'all');
+    wp_enqueue_style('bootstrapcss'); // Enqueue it!
+
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
+
+    wp_register_style('frontpage', get_template_directory_uri() . '/styleSheets/frontpage.css', array(), '1.0', 'all');
+    wp_enqueue_style('frontpage'); // Enqueue it!
+
+    wp_register_style('footer', get_template_directory_uri() . '/styleSheets/footer.css', array(), '1.0', 'all');
+    wp_enqueue_style('footer'); // Enqueue it!
+
+    wp_register_style('veinpropagetemplate', get_template_directory_uri() . '/styleSheets/veinpropagetemplate.css', array(), '1.0', 'all');
+    wp_enqueue_style('veinpropagetemplate'); // Enqueue it!
+
+    wp_register_style('blog', get_template_directory_uri() . '/styleSheets/blog.css', array(), '1.0', 'all');
+    wp_enqueue_style('blog'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -128,9 +163,15 @@ function register_html5_menu()
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
         'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+        'footer-menu' => __('Footer Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
     ));
 }
+
+//regerist custom nav
+function wpb_custom_new_menu() {
+  register_nav_menu('VeinPro-Main-Menu',__( 'VeinPro Main Menu' ));
+}
+
 
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args($args = '')
@@ -251,7 +292,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+    return '... <u><a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a></u>';
 }
 
 // Remove Admin bar
@@ -282,6 +323,7 @@ function html5blankgravatar ($avatar_defaults)
 }
 
 // Threaded Comments
+/*
 function enable_threaded_comments()
 {
     if (!is_admin()) {
@@ -290,7 +332,7 @@ function enable_threaded_comments()
         }
     }
 }
-
+*/
 // Custom Comments Callback
 function html5blankcomments($comment, $args, $depth)
 {
@@ -342,12 +384,14 @@ function html5blankcomments($comment, $args, $depth)
 // Add Actions
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
 add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
-add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
+// add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
-add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
+// add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+// add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+
+add_action( 'init', 'wpb_custom_new_menu' );
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
@@ -396,6 +440,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 \*------------------------------------*/
 
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
+/*
 function create_post_type_html5()
 {
     register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
@@ -432,7 +477,30 @@ function create_post_type_html5()
         ) // Add Category and Post Tags support
     ));
 }
-
+*/
+function register_post_type_taxonomy() {
+    register_taxonomy('blog_post_type', 'post',
+        array(
+            'labels' => array(
+                'name' => __('Post Types', 'html5blank'),
+                'singular_name' => __('Post Type', 'html5blank'),
+                'add_new_item' => __('Add New Post Type', 'html5blank'),
+                'edit_item' => __('Edit Post Type', 'html5blank'),
+                'new_item' => __('New Post Type', 'html5blank'),
+                'view_item' => __('View Post Type', 'html5blank'),
+                'search_items' => __('Search Post Types', 'html5blank'),
+                'not_found' => __('No Post Types found', 'html5blank')
+            ),
+            'hierarchical'    => true,
+            'capabilities' => array(
+                'manage_terms' => '',
+                'edit_terms' => '',
+                'delete_terms' => '',
+                'assign_terms' => 'edit_posts'
+            ),
+        )
+    );
+}
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/
@@ -448,5 +516,65 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+
+
+//this code disables the comments erase this code to enable them
+// Disable support for comments and trackbacks in post types
+function df_disable_comments_post_types_support() {
+	$post_types = get_post_types();
+	foreach ($post_types as $post_type) {
+		if(post_type_supports($post_type, 'comments')) {
+			remove_post_type_support($post_type, 'comments');
+			remove_post_type_support($post_type, 'trackbacks');
+		}
+	}
+}
+add_action('admin_init', 'df_disable_comments_post_types_support');
+
+// Close comments on the front-end
+function df_disable_comments_status() {
+	return false;
+}
+add_filter('comments_open', 'df_disable_comments_status', 20, 2);
+add_filter('pings_open', 'df_disable_comments_status', 20, 2);
+
+// Hide existing comments
+function df_disable_comments_hide_existing_comments($comments) {
+	$comments = array();
+	return $comments;
+}
+add_filter('comments_array', 'df_disable_comments_hide_existing_comments', 10, 2);
+
+// Remove comments page in menu
+function df_disable_comments_admin_menu() {
+	remove_menu_page('edit-comments.php');
+}
+add_action('admin_menu', 'df_disable_comments_admin_menu');
+
+// Redirect any user trying to access comments page
+function df_disable_comments_admin_menu_redirect() {
+	global $pagenow;
+	if ($pagenow === 'edit-comments.php') {
+		wp_redirect(admin_url()); exit;
+	}
+}
+add_action('admin_init', 'df_disable_comments_admin_menu_redirect');
+
+// Remove comments metabox from dashboard
+function df_disable_comments_dashboard() {
+	remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal');
+}
+add_action('admin_init', 'df_disable_comments_dashboard');
+
+// Remove comments links from admin bar
+function df_disable_comments_admin_bar() {
+	if (is_admin_bar_showing()) {
+		remove_action('admin_bar_menu', 'wp_admin_bar_comments_menu', 60);
+	}
+}
+add_action('init', 'df_disable_comments_admin_bar');
+// this is the end of the diable comment section ^
+
+
 
 ?>

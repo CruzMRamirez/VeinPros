@@ -1,0 +1,22 @@
+.blog-content {
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.blog-post {
+    background-color: gainsboro; 
+    margin:15px; 
+    padding: 10px 0 10px 0;
+}
+.blog-col {
+    border-left: 1px white solid;
+}
+.blog-min {
+       min-height: 125px;
+}
+
+
+@media only screen and (max-width:768px) {
+	.blog-col {
+    	border-left: none;
+	}
+}
