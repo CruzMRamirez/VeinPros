@@ -14,7 +14,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.footer #googleMap {
+#map {
+  width: 100%;
+  height: 300px;
+  background-color: grey;
   max-height: 300px;
 }
 .footer .style-bottom {
